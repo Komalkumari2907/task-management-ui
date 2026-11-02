@@ -1,0 +1,86 @@
+.summary-card {
+min-width: 0;
+padding: 22px;
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 14px;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.summary-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.summary-card-top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 22px;
+}
+
+.summary-icon {
+width: 44px;
+height: 44px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 12px;
+font-size: 21px;
+}
+
+.summary-icon.purple {
+background: #ede9fe;
+color: #7c3aed;
+}
+
+.summary-icon.blue {
+background: #dbeafe;
+color: #2563eb;
+}
+
+.summary-icon.orange {
+background: #ffedd5;
+color: #ea580c;
+}
+
+.summary-icon.green {
+background: #dcfce7;
+color: #16a34a;
+}
+
+.summary-menu {
+color: #9ca3af;
+letter-spacing: 2px;
+cursor: pointer;
+}
+
+.summary-card-content .summary-title {
+margin: 0 0 8px;
+color: #6b7280;
+font-size: 13px;
+font-weight: 500;
+}
+
+.summary-count {
+margin: 0 0 10px;
+color: #111827;
+font-size: 30px;
+font-weight: 700;
+}
+
+.summary-description {
+margin: 0;
+color: #9ca3af;
+font-size: 12px;
+}
+
+@media (max-width: 480px) {
+.summary-card {
+padding: 16px;
+}
+
+.summary-count {
+font-size: 25px;
+}
+}

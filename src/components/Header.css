@@ -1,0 +1,135 @@
+.dashboard-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 24px;
+margin-bottom: 32px;
+}
+
+.header-title h1 {
+margin: 0 0 8px;
+color: #111827;
+font-size: 28px;
+font-weight: 700;
+}
+
+.header-title p {
+margin: 0;
+color: #9ca3af;
+font-size: 14px;
+}
+
+.header-actions {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.header-search {
+display: flex;
+align-items: center;
+gap: 10px;
+width: 230px;
+padding: 11px 13px;
+border: 1px solid #e5e7eb;
+border-radius: 9px;
+background: #ffffff;
+}
+
+.search-icon {
+font-size: 22px;
+color: #9ca3af;
+}
+
+.header-search input {
+width: 100%;
+min-width: 0;
+border: none;
+outline: none;
+background: transparent;
+color: #111827;
+font-size: 13px;
+}
+
+.header-search input::placeholder {
+color: #9ca3af;
+}
+
+.notification-button {
+position: relative;
+width: 42px;
+height: 42px;
+border: 1px solid #e5e7eb;
+border-radius: 9px;
+background: #ffffff;
+color: #4b5563;
+font-size: 21px;
+cursor: pointer;
+}
+
+.notification-dot {
+position: absolute;
+top: 8px;
+right: 8px;
+width: 7px;
+height: 7px;
+background: #ef4444;
+border: 1px solid #ffffff;
+border-radius: 50%;
+}
+
+.add-task-button {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 12px 17px;
+border: none;
+border-radius: 9px;
+background: #4f46e5;
+color: #ffffff;
+font-size: 13px;
+font-weight: 600;
+white-space: nowrap;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+.add-task-button:hover {
+background: #4338ca;
+}
+
+.add-task-button span {
+font-size: 20px;
+line-height: 1;
+}
+
+@media (max-width: 900px) {
+.dashboard-header {
+align-items: flex-start;
+flex-direction: column;
+}
+
+.header-actions {
+width: 100%;
+flex-wrap: wrap;
+}
+
+.header-search {
+flex: 1;
+}
+}
+
+@media (max-width: 480px) {
+.header-title h1 {
+font-size: 24px;
+}
+
+.header-actions {
+gap: 10px;
+}
+
+.header-search {
+min-width: 100%;
+}
+}
